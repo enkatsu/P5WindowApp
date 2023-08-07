@@ -4,11 +4,9 @@ ArrayList<Ball> balls;
 void setup() {
   size(600, 600);
 
-  for (int i = 0; i < 1; i++) {
-    String[] args = { "App" + i };
-    SubApplet sa = new SubApplet();
-    PApplet.runSketch(args, sa);
-  }
+  String[] args = { "SubApplet" };
+  SubApplet sa = new SubApplet();
+  PApplet.runSketch(args, sa);
 
   graphics = createGraphics(displayWidth, displayHeight);
   balls = new ArrayList<Ball>();
